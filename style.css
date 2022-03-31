@@ -8,7 +8,7 @@
 *{
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: ptsans;
+    font-family: 'PT Sans', sans-serif;
     color:var(--color-accent)
 }
 body{
@@ -108,10 +108,7 @@ button:hover{
     flex-wrap: wrap;
 }
 
-@font-face {
-    font-family: ptsans;
-    src: url(/fonts/PTSans-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 @media screen and (max-width:1000px) {
     body{
