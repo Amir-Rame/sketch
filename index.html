@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="Box Canvas"></div>
+
+    <div class="Box Tools">
+        <form>
+            <span>Canvas Size:</span>
+            <input type="range" min="3" max="100" value="20" class="slider" id="canvas_range">
+            <span id="size-holder">20 * 20</span>
+            <br>
+            <span>Backgroung color:</span>
+            <input type="color" id="bg_color_selector" value="#ffffff">
+            <span>, Pen color:</span>
+            <input type="color" id="pen_color_selector" value="#000000">
+            <br>
+            <div class="buttons">
+                <button id="clear_canvas" type="button">Clear</button>
+                <button id="grid_lines" type="button">Grid Lines</button>
+                <button id="pen" class="active_btn toggle" type="button">Pen</button>
+                <button id="eraser" class="toggle" type="button">Eraser</button>
+                <button id="pen_rainbow" class="toggle" type="button">Rainbow</button>
+                <button id="color_picker" class="toggle" type="button">Color picker</button>
+                <button id="shader" class="toggle" type="button">Shader</button>
+                <button id="lighten" class="toggle" type="button">Lighten</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+:root{
+    --color-bg:#161616;
+    --color-box:#2c2c2c;
+    --color-accent:#a06cd5;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: ptsans;
+    color:var(--color-accent)
+}
+body{
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.pixel{
+    user-select: none;
+}
+.Box{
+    background-color: var(--color-box);
+    margin: 2rem 2rem;
+}
+.Canvas{
+    width:64rem;
+    height:64rem;
+    display: grid;
+    padding: 2rem;
+}
+.bordered{
+    border:solid 1px red;
+}
+
+
+/* tools */
+.Tools{
+    width:35rem;
+    padding: 2rem;
+    border-radius: 2px;
+}
+
+.Tools span{
+    font-size: 2.4rem;
+}
+
+button{
+    font-size: 2.4rem;
+    border:1px solid var(--color-accent);
+    cursor: pointer;
+    background-color: var(--color-box);
+    border-radius: 5px;
+    margin-right:1rem;
+    margin-top: 1rem;
+}
+button:hover{
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.active_btn{
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.Tools input[type='color']{
+    width:6rem;
+    height:3rem;
+    margin: 1rem;
+    cursor: pointer;
+    padding:0;
+    background-color: var(--color-accent);
+    border-radius: 5px;
+}
+
+.Tools input[type='range']{
+    margin:1rem 2rem;
+    width:20rem;
+    appearance: none;
+    background: #7c7c7c;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.Tools input[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px; 
+    background: var(--color-accent); 
+    cursor: pointer; 
+    border-radius: 50%;
+}
+
+.Tools input[type='range']::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--color-accent);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: ptsans;
+    src: url(/fonts/PTSans-Regular.ttf);
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        flex-direction: column;
+    }
+    .Tools{
+        width:64rem;
+    }
+    
+}
+
+
+
+
+
+
+
