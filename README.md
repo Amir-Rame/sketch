@@ -1,5 +1,5 @@
 # sketch
-a simple drawing tool
+a simple drawing tool made with java script.
 
 it uses a simple grid system to create pixels.
 
